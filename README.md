@@ -25,6 +25,11 @@ Quick summary of how the subset is derived:
 6:Choose iterativly smaller numbers until the remain is above 0 again(You replace the number that overshot).
   Skip repeated numbers during overshooting, so you do not need to calc all that again(For large lists).
 7:If none succeeded, remove the biggest scope wich does not make (remain > sum_of_left_over_num)
-8:
+
+Logic optimisations:1:Keep variables for tracking the list_counts so you do not have to do look-ups(with summing items again).
+                      Example: Total_outside_list , Total_in_list : Whenever you make a change, keep track of it
+                      by changing the variables(Total_outside_list+=n;Total_in_list-=1; when you move an item between lists)
+                      This way you can do: If (Total_outside_list + Total_in_list - item_to_remove_step_7 < goal ) {item required}
+                    2:i forfor... its on the tip of my tongue...
 
 // Gonna dissapear for a week again but i will finish this. I am onto somthing.
