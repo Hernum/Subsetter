@@ -17,7 +17,7 @@ Milestones / To-do list.
 []:
 
 Quick summary of how the subset is derived:
-1:Get the largest number from the list that is under x.
+1:Get the largest number from the list that is under (x minus the smallest number in the list).
 2:Calculate the remain of the first iteration.
 3:Get the second largest number under x.
 4:Get the remain of the next iteration.
