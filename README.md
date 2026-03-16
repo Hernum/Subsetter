@@ -23,6 +23,7 @@ Quick summary of how the subset is derived:
 4:Get the remain of the next iteration.
 5:Once the remain is <0, you know you have hit the floor(or x), if all values are used before this happens, return 1;
 6:Choose iterativly smaller numbers until the remain is above 0 again(You replace the number that overshot).
+  Skip repeated numbers during overshooting, so you do not need to calc all that again(For large lists).
 7:If none succeeded, remove the biggest scope wich does not make (remain > sum_of_left_over_num)
 8:
 
