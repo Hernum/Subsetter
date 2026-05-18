@@ -33,3 +33,8 @@ Logic optimisations:1:Keep variables for tracking the list_counts so you do not 
                     2:i forfor... its on the tip of my tongue...
 
 // Gonna dissapear for a week again but i will finish this. I am onto somthing.
+
+int main(list x, list y) {
+  // code that would be here
+  
+} 
